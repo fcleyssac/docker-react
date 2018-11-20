@@ -9,9 +9,9 @@ script:
   - docker run fcleyssac/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elastickbeanstalk
-  region: eu-central-1
-  app: docker
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker"
   env: "Docker-env"
   bucket_name: "elasticbeanstalk-eu-central-1-485205850455"
   bucket_path: "docker"
